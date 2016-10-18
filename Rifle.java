@@ -10,7 +10,7 @@
  */
 public class Rifle{
 //------------------------------------------------------------------------------
-//
+//Not complete, name and a few other details may change
 //------------------------------------------------------------------------------    
     private final int damage = 3; //damage subject to change
     private int capacity = 6; //can hold 6 bullets
