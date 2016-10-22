@@ -14,7 +14,7 @@ public class Pistol extends Weapons{
 //------------------------------------------------------------------------------    
     private final int damage = 2; //damage subject to change
     private int capacity = 6; //can hold 6 bullets
-    private final int reloadTime = 3; //6 seconds to reload
+    private final int reloadTime = 3; //3 seconds to reload
     private final int rateFire = 1; // fires one bullet per sec
     private final int range = 7; //range of 7 feet(?)
     private final String weaponName = "Pistol";  //weapon name
