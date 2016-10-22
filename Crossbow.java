@@ -8,19 +8,18 @@
  *
  * @author jensenhemming
  */
-public class Rifle extends Weapons {
+public class Crossbow extends Weapons {
 //------------------------------------------------------------------------------
-//Sets attributes for the rifle in the game
+//Sets the attributes for the crossbow in the game
 //------------------------------------------------------------------------------    
-    private final int damage = 3; //damage subject to change
-    private int capacity = 5; //can hold 5 bullets
-    private final int reloadTime = 3; //3 seconds to reload
-    private final int rateFire = 1; // fires one bullet per sec
-    private final int range = 12; //range of 12 feet(?)
-    private final String weaponName = "Hunting Rifle"; //the weapons name
-    private static final int idNum = 1; //rifle id number
-    private final String ammoType = "308cal"; //bullet type for rifle
-    
+    private final int damage = 8; //damage subject to change
+    private int capacity = 15; //can hold 6 bullets
+    private final int reloadTime = 2; //5 seconds to reload
+    private final int rateFire = 1; // fires one arrow per sec
+    private final int range = 15; //range of 15 feet(?)
+    private final String weaponName = "Crossbow"; //weapons name
+    private static final int idNum = 2; //weapons id
+    private final String ammoType = "Arrow"; //weapons ammo type
     
     public String SetName(){
         return weaponName;
@@ -41,7 +40,7 @@ public class Rifle extends Weapons {
     public int SetRange(){
         return range;
     }
-     
+    
     public String SetBulletType(){
         return ammoType;
     }
@@ -50,19 +49,18 @@ public class Rifle extends Weapons {
         while(capacity > 0 ){ //while loop, while the capacity is more than 0
             return capacity;  //return the capacity and can keep firing
         }
-        if(capacity == 0){//once capacity is 0, must reload to weapons capacity
+        if(capacity == 0){ //once capacity is 0, must reload to weapons capacity
             for (i=0; i < reloadTime; i++){
                 return i;
             }
             if(i == reloadTime){
-            while (capacity <= 5){
-                int reload = capacity++;
-            }
+                while (capacity <= 1){
+                    int reload = capacity++;
+                }
+        }
         }
         return capacity;
-        }
-        return 0;
-    }   
+    }
     public int Fire(int i){
         
         for(i = 0; i< rateFire; i++){ //will add 1 to i until i equals rateFire
@@ -76,5 +74,5 @@ public class Rifle extends Weapons {
     }
         return 0;
     }
+    
 }
-
