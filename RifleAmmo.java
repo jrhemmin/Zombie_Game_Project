@@ -13,8 +13,8 @@ public class RifleAmmo extends Bullets{
 //Sets attributes for the 308 caliber ammo for the Rifle
 //------------------------------------------------------------------------------        
     private final String ammoType = "308cal";
-    private final int ammoSpeed = 8; 
-    private final int damage = 9;
+    private final int ammoSpeed = 8;// just a filler number, will change 
+    private final int damage = 3;
 
     public String SetAmmoType(){
          return ammoType;
