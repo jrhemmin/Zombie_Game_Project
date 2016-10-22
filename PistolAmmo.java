@@ -13,8 +13,8 @@ public class PistolAmmo extends Bullets {
 //Sets attributes for the 9mm ammo for the Pistol
 //------------------------------------------------------------------------------    
     private final String ammoType = "9mm";
-    private final int ammoSpeed = 8; 
-    private final int damage = 8;
+    private final int ammoSpeed = 8; //just a filler will change
+    private final int damage = 2; // possibly will change
 
     public String SetAmmoType(){
          return ammoType;
