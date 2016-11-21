@@ -15,7 +15,7 @@ public class Crossbow extends Weapons {
     private final int damage = 4; //damage subject to change
     private int capacity = 1; //can hold 1 arrow
     private final int reloadTime = 2; //2 seconds to reload
-    private final int rateFire = 4; // fires one arrow per sec
+    private final int rateFire = 3; // fires one arrow every 3 seconds
     private final int range = 15; //range of 15 feet(?)
     private final String weaponName = "Crossbow"; //weapons name
     private static final int idNum = 2; //weapons id
