@@ -26,6 +26,10 @@ public class Rifle extends Weapons {
         return weaponName;
     }
     
+    public int SetidNum(){
+        return idNum;
+    }
+    
     public int SetDamage(){
         return damage;
     }
