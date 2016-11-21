@@ -15,7 +15,7 @@ public class Rifle extends Weapons {
     private final int damage = 3; //damage subject to change
     private int capacity = 5; //can hold 5 bullets
     private final int reloadTime = 3; //3 seconds to reload
-    private final int rateFire = 4; // fires one bullet per sec
+    private final int rateFire = 4; // fires one bullet every 4 seconds
     private final int range = 12; //range of 12 feet(?)
     private final String weaponName = "Hunting Rifle"; //the weapons name
     private static final int idNum = 1; //rifle id number
