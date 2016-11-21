@@ -24,6 +24,10 @@ public class Crossbow extends Weapons {
     public String SetName(){
         return weaponName;
     }
+   
+    public int SetidNum(){
+        return idNum;
+    }
     
     public int SetDamage(){
         return damage;
