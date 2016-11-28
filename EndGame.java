@@ -15,7 +15,7 @@ public class EndGame extends JFrame
 	public EndGame()
 	{
 		this.setSize(325,100);
-		this.setLocation(500,300);
+		this.setLocation(500,300);	//sets window location on the screen
 		this.setTitle("Would you like to play again?");		//creates the window to ask if you'd like to play again
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
@@ -39,8 +39,8 @@ public class EndGame extends JFrame
 				"Thanks for playing",
 				getTitle(), JOptionPane.INFORMATION_MESSAGE);
 				int clickCount = 0;
-				clickCount++;
-				if(clickCount > 0)
+				clickCount++;		
+				if(clickCount > 0)  //if no is clicked, after message is shown, will exit the window
 				{
 					System.exit(0);
 				}
